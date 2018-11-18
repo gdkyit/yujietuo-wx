@@ -3,13 +3,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.gdkyit</groupId>
-    <artifactId>yujietuo-wx</artifactId>
-    <version>0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <name>spring-boot-project-seed</name>
+    <description>bootstrap project with spring boot</description>
 
-    <name>yujietuo-wx-service</name>
-    <description>YuJieTuo HouseKeeper Service Website</description>
+    <groupId>com.gdkyit</groupId>
+    <artifactId>project-seed</artifactId>
+    <version>0.1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>yujietuo-web</module>
+        <module>application</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -19,9 +24,12 @@
     </parent>
 
     <properties>
+        <app.version>0.1.0</app.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <project.finalName>yujietuo-wx-service</project.finalName>
+        <project.finalVersion>0.1.0</project.finalVersion>
     </properties>
 
     <dependencies>
@@ -109,22 +117,6 @@
 
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>springloaded</artifactId>
-                        <version>1.2.6.RELEASE</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-        </plugins>
-    </build>
-
     <repositories>
         <repository>
             <id>aliyun-repos</id>
@@ -144,6 +136,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
 
 
 </project>
