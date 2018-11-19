@@ -12,8 +12,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>yujietuo-web</module>
-        <module>application</module>
+        <module>arch-web</module>
     </modules>
 
     <parent>
