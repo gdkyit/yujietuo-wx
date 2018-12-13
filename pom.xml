@@ -28,7 +28,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <project.finalName>yujietuo-wx-service</project.finalName>
-        <project.finalVersion>0.1.0</project.finalVersion>
+        <project.finalVersion>0.8.0</project.finalVersion>
     </properties>
 
     <dependencies>
