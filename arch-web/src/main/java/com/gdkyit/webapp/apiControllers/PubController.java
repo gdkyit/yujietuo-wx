@@ -26,11 +26,11 @@ public class PubController {
         return Result.genSuccessResult(rs);
     }
 
+
     @GetMapping("/dblist")
     public Result getDblist(){
         return Result.genSuccessResult(baseService.getDblist());
     }
-
 
 
 }
